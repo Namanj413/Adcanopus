@@ -1,4 +1,4 @@
-.Genderactive{
+/* .Genderactive{
 background-color: white;
 border: 3px solid transparent;
 color: #4051BC;
@@ -27,46 +27,8 @@ color: #4051BC;
     border-color:red !important;
   }
 
-
-  @media screen and (max-width: 960px) {
-    /* Your CSS rules for screens up to 960px wide go here */
-
-    .RightImg{
-        width: 100%;
-    }
-
-    .rightForm{
-        margin-top:0px
-    }
-    .rightPanel{
-        margin-top: 1vh !important;
-    }
-    .getFreeText{
-        margin-top: 24vh !important;
-        display: flex;
-        justify-content: center;
-    }
-    .consoleImgLogo{
-        width: 200px;
-    }
-    .leftContainerBox{
-        display: block !important;
-    }
-  }
-
-  @media screen and (min-width: 961px) {
-    /* Your CSS rules for screens up to 960px wide go here */
-    .leftContainerBox{
-        display: flex !important;
-    }
-    .RightImg{
-        width: 630px;
-    }
-    .consoleImgLogo{
-        width: 200px;
-    }
-
-    .rightForm{
-        margin-top:137px
-    }
-  }
+  .rightPanelBgImgCtrl{
+    position: absolute;
+    overflow: hidden;
+}
+  */

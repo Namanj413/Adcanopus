@@ -22,6 +22,7 @@ import blueBoy from "./assets/img/blueboy.png";
 import blueGirl from "./assets/img/bluegirl.png";
 
 import "./Home.css"
+import { Container } from '@mui/material';
 const Item = styled(Paper)(({ theme }) => ({
     backgroundColor: theme.palette.mode === 'dark' ? 'transaparent' : 'transaparent',
     ...theme.typography.body2,
@@ -34,7 +35,7 @@ function Home() {
     const [gender, setGender] = useState("")
     return (
         <>
-            <container container sx={{ width: "100vw", height: "100vh" }}>
+            <Box container sx={{ width: "100vw", height: "100vh" }}>
                 <br/>
                 {/* Left side */}
                 <Grid container spacing={2} sx={{ width: "100vw", height: "100vh" }}>
@@ -80,16 +81,16 @@ function Home() {
                         {/* <Item>xs=8</Item> */}
                     </Grid>
                    
-                    <Grid xs={12} md={5} sx={{ overflow: "hidden" }} className="rightPanel">
-                        <div style={{ position: "absolute", overflow: "hidden" }}>
-                            <img src={rightside} alt="Mobile_img" className='RightImg'/>
+                    <Grid xs={12} md={5} className="rightPanel">
+                        <div className='rightPanelBgImgCtrl'>
+                            <img src={rightside} alt="Mobile_img" className='rightImg'/>
                         </div>
-                        <Box sx={{ display: "flex", color: "white", height: "100%", overflow: "hidden" }} >
+                        <Box sx={{ display: "flex", color: "white", height: "100%", }} >
 
                             <Grid xs={2} md={2.5} sx={{ position: "relative" }}>
                             </Grid>
                             <Grid xs={10} md={9.5} sx={{ position: "relative" }}>
-                                <Box sx={{ width: "100%", height: "100%", overflow: "hidden" }} className="rightForm">
+                                <Box sx={{ }} className="rightForm">
                                     <Typography sx={{ textAlign: "start", fontSize: "26px", color: "white", fontWeight: "bold" }}>
                                         Join Now
                                     </Typography>
@@ -117,30 +118,31 @@ function Home() {
                                     <Typography sx={{ textAlign: "start", fontSize: "16px", marginTop: "9px", color: "#B0BAFD" }}>
                                         Enter winning data now
                                     </Typography>
-                                    <Typography >
+                                    <Box  className="Signupform">
 
-                                        <Typography sx={{ textAlign: "start", marginTop: "9px", color: "#B0BAFD", display: "flex", justifyContent: "space-evenly", cursor: "pointer" }} >
-                                            <div className={gender === "Male" ? "Genderactive" : "Genderainctive"} style={{ width: "210px", display: "flex", justifyContent: "center", borderRadius: "15px", height: "54px", alignItems: "center", fontWeight: "bold", fontSize: "20px" }} onClick={(e) => { (setGender("Male")) }}>
+                                        <Typography sx={{ textAlign: "start", marginTop: "9px", color: "#B0BAFD", display: "flex", justifyContent: "space-evenly", cursor: "pointer" ,width:"95%"}} >
+                                            <div className={gender === "Male" ? "Genderactive" : "Genderainctive"} style={{ width: "48%", display: "flex", justifyContent: "center", borderRadius: "15px", height: "47px", alignItems: "center", fontWeight: "bold", fontSize: "20px" }} onClick={(e) => { (setGender("Male")) }}>
                                                 <img src={gender === "Male" ? blueBoy : whiteBoy} alt="gendericon" style={{ height: "30px" }} /> &nbsp; Male
                                             </div>
-                                            <div className={gender === "Female" ? "Genderactive" : "Genderainctive"} style={{ width: "210px", display: "flex", justifyContent: "center", borderRadius: "15px", height: "54px", alignItems: "center", fontWeight: "bold", fontSize: "20px" }} onClick={(e) => { (setGender("Female")) }}>
+                                            <div className={gender === "Female" ? "Genderactive" : "Genderainctive"} style={{ width: "48%", display: "flex", height: "30px" ,justifyContent: "center", borderRadius: "15px", height: "47px", alignItems: "center", fontWeight: "bold", fontSize: "20px" }} onClick={(e) => { (setGender("Female")) }}>
                                                 <img src={gender === "Female" ? blueGirl : whiteGirl} alt="gendericon" style={{ height: "30px", color: "white" }} /> &nbsp; Female
                                             </div>
                                         </Typography>
-                                        <br />
+                                       
 
-                                        <Grid container spacing={2}>
-                                            <Grid xs={6} md={6}>
-                                                <input className='inputCss' type="text" placeholder='First Name' style={{ width: "93%", borderRadius: "10px", height: "45px", backgroundColor: "transparent", marginLeft: "10px", color: "white", fontWeight: "bold", textAlign: "center" }} />
+                                        <Grid container spacing={1} sx={{marginTop: "9px"}}>
+                                            <Grid xs={12} sm={6} md={6} >
+                                                <input className='inputCss' type="text" placeholder='First Name' style={{ width: "93%", borderRadius: "10px", height: "45px", backgroundColor: "transparent", color: "white", fontWeight: "bold", textAlign: "center" }} />
                                             </Grid>
-                                            <Grid xs={6}>
-                                                <input className='inputCss' type="text" placeholder='Last Name' style={{ width: "93%", borderRadius: "10px", height: "45px", backgroundColor: "transparent", marginLeft: "0px", color: "white", fontWeight: "bold", textAlign: "center" }} />
+                                            <Grid xs={12} sm={6} md={6}>
+                                                <input className='inputCss' type="text" placeholder='Last Name' style={{ width: "93%", borderRadius: "10px", height: "45px", backgroundColor: "transparent", color: "white", fontWeight: "bold", textAlign: "center" }} />
 
                                             </Grid>
                                         </Grid>
-                                        <Grid container spacing={1} sx={{ marginTop: "28px" }}>
+                                         
+                                        <Grid container spacing={1} sx={{marginTop: "9px"}}>
                                             <Grid xs={12} >
-                                                <input className='inputCss' type="email" required="true" placeholder='Abx@gmail.com' style={{ width: "93%", borderRadius: "10px", height: "45px", backgroundColor: "transparent", marginLeft: "10px", color: "white", fontWeight: "bold", textAlign: "Start" }} />
+                                                <input className='inputCss' type="email" required="true" placeholder='Abx@gmail.com' style={{ width: "93%", borderRadius: "10px", height: "45px", backgroundColor: "transparent", color: "white", fontWeight: "bold", textAlign: "Start" }} />
                                             </Grid>
 
                                         </Grid>
@@ -151,14 +153,14 @@ function Home() {
                                                 <button style={{ width: "93%", height: "54px", backgroundColor: "#425AEF", color: "white", fontWeight: "bold", border: "none", borderRadius: "13px", fontSize: "18px", alignItems: "center", cursor: "pointer" }}>Join For Free  &nbsp; <span style={{ fontSize: "32px", paddingTop: "40px" }}>&rarr;</span></button>
                                             </Grid>
                                         </Grid>
-                                    </Typography>
+                                    </Box>
                                 </Box>
                             </Grid>
                         </Box>
 
                     </Grid>
                 </Grid>
-            </container>
+            </Box>
         </>
     )
 }

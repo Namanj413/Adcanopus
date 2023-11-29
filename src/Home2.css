@@ -1,0 +1,107 @@
+.Genderactive{
+background-color: white;
+border: 3px solid transparent;
+color: #4051BC;
+}
+
+.Genderainctive{
+    background-color: transparent;
+    border: 3px solid #4051BC;
+    color: "white"
+    }
+
+.inputCss:focus {
+    border:2px solid #4051BC !important;
+    border-color:red !important;
+  
+  }
+
+  .inputCss {
+ 
+    border:2px solid #4051BC !important;
+    
+  }
+
+  .input:focus {
+    border:2px solid #4051BC !important;
+    border-color:red !important;
+  }
+
+  .rightPanelBgImgCtrl{
+    position: absolute;
+    overflow: hidden;
+}
+
+  @media  only screen and (min-width:0px) and (max-width: 350px) {
+  
+    /* Your CSS rules for screens up to 960px wide go here */
+    .rightPanelBgImgCtrl{
+      max-width: 100%;
+      max-height: 100%;
+     
+    }
+.Signupform{
+
+    max-width: 100% !important;
+margin-left: 8%;
+}
+.mobileBgImg{
+    max-width: 90vw;
+}
+.IphonePanelControll{
+    margin-left: 41px !important;
+}
+
+.leafControl{
+    margin-top: 275px;
+    margin-left: 232px;
+    max-height: 67.2px;
+}
+.excluseiveIconControl{
+    margin-top: 229px;
+    max-height: 106px;
+}
+
+.iphoneImg{
+    margin-top: 45%;
+    margin-left:10px;
+    height:250px;
+}
+    .rightImg{
+        height: 100vh !important;
+    }
+
+    .rightForm{
+        margin-top:0px
+    }
+    .rightPanel{
+        margin-top: 1vh !important;
+        max-width: 100vw !important;
+        overflow: hidden !important;
+
+    }
+    .getFreeText{
+        margin-top: 45vh !important;
+        display: flex;
+        margin-top: 310px;
+        
+        margin-left: 21px;
+    }
+      
+    .consoleImgLogo{
+        width: 200px;
+    }
+    .leftContainerBox{
+        display: block !important;
+        
+    }
+    .getfreeImgController{
+        width: 90vw !important;
+        display: flex !important;
+        justify-content: center !important;
+    }
+    /* .rightForm{
+       } */
+  
+    }
+
