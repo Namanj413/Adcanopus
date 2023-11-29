@@ -301,7 +301,7 @@ function Home2() {
                                                     <Box component="div" sx={{ display: "flex", marginTop: "10px", justifyContent: "space-evenly" }} >
 
                                                         <Box component="div" sx={{
-                                                             borderRadius: "15px", display: "flex",
+                                                             borderRadius: "15px", display: "flex",border:"2px solid white",
                                                             justifyContent: "center", alignItems: "center", color: gender === "Male" ? "black" : "white"
                                                             , backgroundColor: gender === "Male" ? "white" : "transaparent",
                                                             height: { xs: "0vw", sm: "4vh", mm: "4.5vh", lm: "5vh", md: "5vh", lg: "6vh", xl: "6vh" }
@@ -324,7 +324,7 @@ function Home2() {
                                                             </Typography>
                                                         </Box>
                                                         <Box component="div" sx={{
-                                                         borderRadius: "15px", display: "flex",
+                                                         borderRadius: "15px", display: "flex",border:"2px solid white",
                                                             justifyContent: "center", alignItems: "center", backgroundColor: gender === "Female" ? "white" : "transaparent",
                                                             height: { xs: "0vw", sm: "4vh", mm: "4.5vh", lm: "5vh", md: "5vh", lg: "6vh", xl: "6vh" }
                                                             , width: { xs: "0vw", sm: "40%", mm: "40%", lm: "40%", md: "40%", lg: "40%", xl: "40%" }
@@ -382,7 +382,7 @@ function Home2() {
                                                                     xs: "0vw", sm: "3.5vh", mm: "4vh", lm: "5vh", md: "4vh", lg: "6vh", xl: "6vh"
                                                                 }, justifyContent: "space-evenly"
                                                             }}>
-                                                                <input type="text" placeholder='Pin Code' style={{ width: "40%", borderRadius: "10px",border:"1px solid #4051BC", height: "100%", backgroundColor: "transparent", color: "white", fontWeight: "bold", textAlign: "center" }} />
+                                                                <input type="number" placeholder='Pin Code' style={{ width: "40%", borderRadius: "10px",border:"1px solid #4051BC", height: "100%", backgroundColor: "transparent", color: "white", fontWeight: "bold", textAlign: "center" }} />
                                                                 <input type="text" placeholder='Address' style={{ width: "40%", borderRadius: "10px",border:"1px solid #4051BC", height: "100%", backgroundColor: "transparent", color: "white", fontWeight: "bold", textAlign: "center" }} />
                                                             </Box>
                                                         </Grid>
